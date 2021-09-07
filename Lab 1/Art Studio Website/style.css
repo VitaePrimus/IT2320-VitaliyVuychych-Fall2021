@@ -2,5 +2,6 @@ body{
     padding: 2%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: beige;
+    background-image: linear-gradient(blue, rgba(83, 244, 255, 0), yellow);
+
 }
