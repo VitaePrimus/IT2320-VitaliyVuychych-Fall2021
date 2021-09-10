@@ -1,7 +1,71 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 85%;
+    min-height: 100vh;
+    position: relative;
     padding: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-image: linear-gradient(blue, rgba(83, 244, 255, 0), yellow);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-image: linear-gradient(rgb(96, 96, 255), rgba(83, 244, 255, 0), white, rgba(83, 244, 255, 0), rgb(255, 255, 102));
+    border-left: 10px solid silver;
+    border-right: 10px solid silver;
+    box-shadow: 10px 0px 50px gray;
+    box-shadow: -10px 0px 50px gray;
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    height: 40px;
+}
+
+ul{
+    list-style-type: none;
+    width: 100%;
+    padding: 0.6%;
+    overflow: auto;
+    background-image: linear-gradient(rgb(208, 208, 255), rgba(83, 244, 255, 0), white);
+    border: 0.1px solid white;
+    border-radius: 40px;
+    box-shadow: 0px -10px 10px rgb(208, 208, 255);
+    box-shadow: 0px 10px 10px rgb(246, 255, 195);
+}
+
+li{
+    float: left;
+}
+
+.button{
+    display: inline-block;
+    background-image: linear-gradient( white, rgba(83, 244, 255, 0), yellow);
+    border: 0.1px solid white;
+    border-radius: 20%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-image: linear-gradient( white, rgba(83, 244, 255, 0), yellow, yellow);
+}
+
+.logo{
+    float: left;
 
 }
+
+.title{
+    text-align: left;
+}
+
+header{
+    display: inline-block;
+    padding: 1% 0%;
+}
+
