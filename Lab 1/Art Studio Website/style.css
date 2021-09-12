@@ -54,11 +54,16 @@ li{
 
 .button:hover{
     background-image: linear-gradient( white, rgba(83, 244, 255, 0), yellow, yellow);
+    transform: scale(1.1);
 }
 
-.logo{
+#logo{
     float: left;
     margin: 24px;
+}
+
+#logo:hover{
+    transform: scale(1.1);
 }
 
 .title{
