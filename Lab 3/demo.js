@@ -180,13 +180,13 @@ function fibonacci(){
     fibonacci[0] = 0;
     fibonacci[1] = 1;
     var count = 2;
-    var n1 = 0;
-    var n2 = 1;
+    var num1 = 0;
+    var num2 = 1;
 
     while(count < 20){
-        fibonacci[count] = n1 + n2
-        n1 = n2;
-        n2 = fibonacci[count];
+        fibonacci[count] = num1 + num2
+        num1 = num2;
+        num2 = fibonacci[count];
         count++;        
     }
 
