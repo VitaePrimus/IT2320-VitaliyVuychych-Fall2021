@@ -190,7 +190,7 @@ function fibonacci(){
         count++;        
     }
 
-    alert("Fiest 20 numbers of the Fibonacci sequence are: " + fibonacci);
+    alert("First 20 numbers of the Fibonacci sequence are: " + fibonacci);
 
 }
 
