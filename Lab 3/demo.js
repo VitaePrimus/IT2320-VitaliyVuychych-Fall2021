@@ -136,4 +136,37 @@ function Repeat( message )
     }
 }
 
+function multiply()//function definition
+{
+    var x = 25;
+    var y = 42;
+    var sum = x * y;
+    alert("The answer is " + sum);
+}
+
+function divide()//function definition
+{
+    var x = 48;
+    var y = 12;
+    var sum = x / y;
+    alert("Each kid will get " + sum + " pencils.");
+}
+
+function mean()//function definition
+{
+    const numbers = [25,47,98,46,52];
+    var sum = 0;
+    var mean;
+    
+    for(var i = 0; i < numbers.length; i++){
+        sum = sum + numbers[i];
+    }
+
+    mean = sum / numbers.length;
+    alert("The mean of these numbers is: " + mean);
+}
+
+
+
+
     
