@@ -136,24 +136,21 @@ function Repeat( message )
     }
 }
 
-function multiply()//function definition
-{
+function multiply(){
     var x = 25;
     var y = 42;
     var sum = x * y;
     alert("The answer is " + sum);
 }
 
-function divide()//function definition
-{
+function divide(){
     var x = 48;
     var y = 12;
     var sum = x / y;
     alert("Each kid will get " + sum + " pencils.");
 }
 
-function mean()//function definition
-{
+function mean(){
     const numbers = [25,47,98,46,52];
     var sum = 0;
     var mean;
@@ -166,6 +163,36 @@ function mean()//function definition
     alert("The mean of these numbers is: " + mean);
 }
 
+function evenSum(){
+    var sum = 0;
+
+    for(var i = 1; i <= 200; i++){
+        if(i % 2 == 0){
+            sum = sum + i;
+        }
+    }
+
+    alert("The sum of all even numbers in the given range is: " + sum);
+}
+
+function fibonacci(){
+    const fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    var count = 2;
+    var n1 = 0;
+    var n2 = 1;
+
+    while(count < 20){
+        fibonacci[count] = n1 + n2
+        n1 = n2;
+        n2 = fibonacci[count];
+        count++;        
+    }
+
+    alert("Fiest 20 numbers of the Fibonacci sequence are: " + fibonacci);
+
+}
 
 
 
