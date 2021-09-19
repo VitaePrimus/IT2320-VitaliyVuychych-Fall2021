@@ -140,6 +140,7 @@ function multiply(){
     var x = 25;
     var y = 42;
     var sum = x * y;
+    
     alert("The answer is " + sum);
 }
 
@@ -147,6 +148,7 @@ function divide(){
     var x = 48;
     var y = 12;
     var sum = x / y;
+
     alert("Each kid will get " + sum + " pencils.");
 }
 
@@ -160,6 +162,7 @@ function mean(){
     }
 
     mean = sum / numbers.length;
+
     alert("The mean of these numbers is: " + mean);
 }
 
