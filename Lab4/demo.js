@@ -11,10 +11,6 @@ function CalculateCommission()
     var topCommission = 0;
     var topSalesPerson = "Nobody yet";
 
-    //Your code goes here
-    /*
-    Here's the pseudocode in case you are wondering how to get started:*/
-
     // 1. Save salesperson names in an array
     const name = ["Brad", "Nila", "Joseph", "Kesh", "Lydia", "Devon", "Miller"];
     // 2. Save December sales amount in an array
@@ -36,35 +32,29 @@ function CalculateCommission()
 
     // Calculate commission: 
     for(var i = 0; i < totalSales.length; i++){
-        if(totalSales[i] >=0 && totalSales[i] <= 5000){
+        if(totalSales[i] >= 0 && totalSales[i] <= 5000){
             commission[i] = totalSales[i] * 0.01;
         }
-        else if(totalSales[i] >=5001 && totalSales[i] <= 10000){
+        else if(totalSales[i] >= 5001 && totalSales[i] <= 10000){
             commission[i] = totalSales[i] * 0.02;
         }
-        else if(totalSales[i] >=10001 && totalSales[i] <= 15000){
+        else if(totalSales[i] >= 10001 && totalSales[i] <= 15000){
             commission[i] = totalSales[i] * 0.03;
         }
-        else if(totalSales[i] >=15001 && totalSales[i] <= 30000){
+        else if(totalSales[i] >= 15001 && totalSales[i] <= 30000){
             commission[i] = totalSales[i] * 0.05;
         }
         else{
             commission[i] = totalSales[i] * 0.08;
         }
     }
-
-//         if total sales is greater than 30000 then commission = total sales * 0.08 
-//         If total sales is greater than 15000).....etc
-//         Continue the if condition for the remaining as specified in the requirement for commission %
         
-//         Calculate average commission:
-//         Avg commission = Total commission / 3
-
+    // Calculate average commission:
     for(var i = 0; i < commission.length; i++){
         avgComm[i] = commission[i] / 3;
         avgComm[i] = Math.round(avgComm[i] * 100) / 100     // Made this to round up avg commission to 2 decimals after the point
     }
-//         Display sales person name, commission and average commission
+    // Display sales person name, commission and average commission
     console.log("Name\t\t" + "Commission\t\t" + "Average Commission")
     console.log("-------------------------------------------------")
 
@@ -73,11 +63,19 @@ function CalculateCommission()
     }
 
     console.log("-------------------------------------------------")
-//         Store the commission to a "topCommission" variable.
-//         Each time compare topCommission to commission of current salesperson 
-//         to determine if this is the top commission
 
-//     6. Outside the "For" loop, display topCommission and topSalesperson name.
-// */
+    // Store the commission to a "topCommission" variable.
+    for(var i = 0; i < commission.length; i++){
+        if(commission[i] >= topCommission){
+            topCommission = commission[i];
+            topSalesPerson = name[i];
+        }
+    }
 
+    // 6. Outside the "For" loop, display topCommission and topSalesperson name.
+    alert("The top sales person is " + topSalesPerson + ", with the top comission of " + topCommission + ".")
+    console.log("____________________________________________________________________")
+    console.log("The top sales person is " + topSalesPerson + ", with the top comission of " + topCommission + ".")
+    console.log("____________________________________________________________________")
+    
 }
