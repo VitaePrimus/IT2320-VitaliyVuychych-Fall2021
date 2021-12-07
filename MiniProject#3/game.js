@@ -33,7 +33,14 @@ $(function(){
 
     function flipCard(image){
         $(image).animate({opacity: "100%"}, 1);
-        //$(image).animate({ deg: 360})
+        $({deg: 0}).animate({deg: 360}, { 
+            duration: 1000,
+            step: function(now) {
+                $(image).css({
+                    transform: 'rotate(' + now + 'deg)'
+                });
+            }
+        });
     }
 
     function checkElem(){
